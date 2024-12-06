@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body {
-  font-family: 'Roboto', sans-serif;
+html, body {
+  @apply m-0 p-0 w-full h-full;
+  overflow-x: hidden; /* Menghindari scroll horizontal */
 }

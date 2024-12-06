@@ -1,62 +1,50 @@
 <template>
-    <div class="container mx-auto py-10">
-      <!-- Header Section -->
-      <div class="flex flex-col items-center mb-12">
-        <!-- Teks Utama di Atas Foto -->
-        <h1 class="text-6xl font-bold font-urbanist text-center leading-tight">
-          Hello, <span class="text-[# 4C5AC2]">I’m</span><br />
-          UI/UX Designer
-          <span class="inline-block">
-            <img
-              src="../assets/Vector.png"
-              alt="vector"
-              class="inline-block w-[90px] h-[100px] ml-2"
-            />
-          </span>
+  <!-- Section 1: Creative dan Developer -->
+  <div class="bg-white text-gray-800 justify-center left-[6rem]">
+    <main class="text-center">
+      <!-- Container untuk Creative dan Developer -->
+      <div class="relative inline-block mb-20">
+        <!-- Kata Creative -->
+        <h1 class="absolute right-2 top-4 text-[100px] font-bold z-10">
+          Creative
+          <div class="absolute w-px bg-[#016A98] -mt-24 h-[4rem] left-[28.25rem]"></div>
+          <div class="text-lg font-small text-[#016A98] -mt-24 relative z-10 left-[19.25rem]">
+            <p>Developer</p>
+            <p class="ml-11">UI/UX Designer</p>
+          </div>
         </h1>
+
+        <!-- Kata Developer dimulai dari huruf "a" di bawah Creative -->
+        <h2 class="text-[100px] font-bold text-[#016A98] absolute mt-[11rem] transform -translate-x-1/2 -translate-y-1/2">
+          Developer
+        </h2>
       </div>
-  
-      <!-- Konten Kiri dan Kanan -->
-      <div class="relative mx-auto mt-12 flex justify-between items-center max-w-[1200px]">
-        <!-- Icon dan Teks Kiri -->
-        <div class="text-left flex flex-col items-start -translate-y-16">
-          <img
-            src="../assets/icon.png"
-            alt="icon"
-            class="w-[20px] h-[20px] mb-4"
-          />
-          <p class="text-gray-700 text-lg font-roboto">
-            I love using modern minimalist design to<br />
-            make nice things for people
-          </p>
-        </div>
-  
-        <!-- Foto dengan Background -->
-        <div class="relative flex justify-center items-center -translate-x-24">
-          <!-- Background Image -->
-          <img
-            src="../assets/bg.png"
-            alt="Background"
-            class="absolute w-[400px] h-[200px] bottom-0"
-          />
-          <!-- Foto Person -->
-          <img
-            src="../assets/person.png"
-            alt="Person"
-            class="relative w-[400px] h-[320px] object-cover z-10"
-          />
-        </div>
-  
-        <!-- Teks Pengalaman Kanan -->
-        <div class="text-left flex flex-col items-end -translate-y-16">
-          <h2 class="text-[28px] font-urbanist text-[#4C5AC2] font-bold">10 Years</h2>
-          <p class="text-gray-600 text-[12px] font-roboto text-left">Experience</p>
-        </div>
+    </main>
+  </div>
+
+  <!-- Section 2: Creative for dan Arrow -->
+  <div class="relative">
+    <!-- Container Creative for dan Arrow -->
+    <div class="absolute inset-x-0 z-10 flex justify-between px-16">
+      <!-- Creative for (pindah ke kanan) -->
+      <div class="lg:w-1/5 w-1/3 text-left bg-gray-50 mt-[10rem] p-8 rounded-[22px] ml-[5.50rem]">
+        <h3 class="text-2xl font-bold">Creative for</h3>
+        <p class="mt-4">using modern minimalist design to make nice things for people.</p>
+        <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <!-- Arrow -->
+      <div class="md:w-1/5 w-1/4 mt-[12rem] text-left">
+        <img src="../assets/arrow.png" class="rounded-full h-[157px] w-[156px]" />
       </div>
     </div>
-  </template>
-  
-  <script setup>
-  /* Tidak ada script tambahan */
-  </script>
-  
+  </div>
+
+  <!-- Gambar background -->
+  <div class="relative mt-[17rem] mx-16">
+    <!-- Gambar Star dengan posisi lebih tinggi dan sejajar dengan Developer -->
+    <img src="../assets/star-blue.png" class="absolute top-[-12rem]" alt="Star">
+    
+    <img src="../assets/bg.png" class="rounded-tl-[67px] rounded-tr-[67px] w-full h-[330px] object-cover" />
+    <div class="absolute bottom-4 right-4 mb-4 mr-4"></div>
+  </div>
+</template>

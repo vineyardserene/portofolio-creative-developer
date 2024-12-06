@@ -1,19 +1,21 @@
-<template>
-  <div class="bg-gray-50 min-h-screen font-roboto"> <!-- Menambahkan class font-roboto di sini -->
+<template> 
     <Navbar />
     <HeroSection />
     <Stats />
+    <About />
+    <services />
     <Project />
-       <contact />
+    <contact />
 
-    <Footer />
-  </div>
+    <Footer /> 
 </template>
 
 <script setup>
 import Navbar from "./components/Navbar.vue";
+import About from "./components/About.vue";
 import HeroSection from "./components/HeroSection.vue";
 import Stats from "./components/Stats.vue";
+import services from "./components/services.vue";
 import Footer from "./components/Footer.vue";
 import contact from "./components/contact.vue";
 import Project from "./components/Project.vue";
